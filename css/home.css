@@ -1,0 +1,1308 @@
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/*******************************************
+ADD-MODAL CSS
+********************************************/
+/* The Modal (background) */
+.add-btn-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.addModal-content {
+  background-color: #fe6f53;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  width: 30%;
+  color: white;
+  text-align: center;
+  line-height: 2em;
+
+}
+
+
+.addModal-product-title {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+/* The Close Button */
+.addClose {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.addClose:hover,
+.addClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.remove-btn-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.removeModal-content {
+  background-color: #fe6f53;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  width: 30%;
+  color: white;
+  text-align: center;
+  line-height: 2em;
+
+}
+
+
+.removeModal-product-title {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+/* The Close Button */
+.removeClose {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.removeClose:hover,
+.removeClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*******************************************
+SHOW-MODAL CSS
+********************************************/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 1600px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #52B6E5;
+    color: white;
+}
+
+.modal-product-img {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #52B6E5;
+    color: white;
+}
+
+
+/*******************************************
+END MODAL CSS
+********************************************/
+
+
+/*******************************************
+SEARCH-CONTAINER
+********************************************/
+
+.search-container {
+  margin: 15px auto;
+  /*border: solid 2px black;*/
+  width: 100%;
+  justify-content: center;
+
+
+}
+
+input {
+  display: inline-block;
+  outline: none;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1em;
+  font-weight: 300;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+
+}
+
+.form-style {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.form-style input {
+  padding: 5px 0;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.4s;
+  margin: 1em  auto;
+}
+
+.form-style input:focus,
+.form-style input.focus {
+  border-bottom: solid 2px #52bab3;
+}
+
+
+
+.search-input {
+  display: inline-block;
+  outline: none;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #0AB88D;
+  color: white;
+}
+
+.search-div input {
+  padding: 0.2em 0.35em;
+  border-bottom:solid 2px #3B7A57;
+}
+
+/***********************************************************
+END SEARCH CONTAINER STYLING
+***********************************************************/
+
+
+/***********************************************************
+PROFILE INFORMATION STYLING (MOBILE FIRST)
+***********************************************************/
+
+.account-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  /*min-width: 300px;*/
+  /*position: relative;*/
+  /*border: solid 2px black;*/
+  /*margin-top: 35px;*/
+  margin: 35px auto;
+
+}
+
+.img-btn-container {
+  flex-grow: 1;
+
+}
+
+.img-div {
+  border: solid 2px rgba(229,232,234,0.75);
+  padding: 0;
+  width: 90px;
+  height: 90px;
+  margin: 1em auto;
+  border-radius: 3px;
+
+}
+
+.img-btn {
+  display: block;
+  cursor: pointer;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+}
+
+.account-img {
+  /*position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;*/
+}
+
+.account-info {
+  flex-basis: 30px;
+  flex-grow: 2;
+
+}
+
+.account-name-btn-div {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.account-name {
+  font-weight: 500;
+  color: black;
+}
+
+
+
+.follow-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #0AB88D;
+  color: white;
+  padding: 5px 10px;
+
+  font-size: 1em;
+  border-radius: 3px;
+}
+
+.description-info{
+  flex-basis: auto;
+  font-size: 0.75em;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  padding: 1em;
+  margin: auto;
+
+}
+
+.account-list {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.account-list li  {
+  font-weight: 500;
+  margin-right: 35px;
+}
+
+.website-info a {
+  color: #0066ff;
+  font-weight: 500;
+  /*margin-right: 35px;*/
+}
+
+.account-followers {
+  color: #0066ff;
+  /*margin-right: 35px;*/
+}
+
+.new-account-btn   {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: white;
+  color: #FF8349;
+  display: block;
+  margin: 0 auto;
+  color: #FF8349;
+}
+
+.new-account-container {
+
+  flex-direction: column;
+  height: 400px;
+}
+
+.new-account-btn-container  {
+  margin: 5em auto;
+}
+
+.new-account-h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+  color: black;
+}
+
+
+
+.new-account-btn a {
+
+  color: white;
+  font-size: 1em;
+}
+
+
+
+/***********************************************************
+PRODUCT STYLING
+***********************************************************/
+
+
+.product-listing {
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+
+
+.product-container {
+  display: block;
+  margin: 0.5em 0;
+  border-bottom: solid 2px #0AB88D;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+
+.remove-btn {
+  display: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #FF4242;
+  padding: 0;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+
+}
+
+
+
+.product-container:hover {
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.product-container:hover .remove-btn {
+  display: inline;
+}
+
+.img-product-container{
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+
+.img-product {
+  display: block;
+  height: auto;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+}
+
+.product-info {
+  position: relative;
+}
+
+.product-name {
+  font-size: 1.25em;
+  font-weight: 400;
+  color: #333333;
+  padding: 0.5em 0.25em;
+  text-align: left;
+
+}
+
+.location-date-font {
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+.merchant-price {
+  font-size: 1.25em;
+  padding: 0.5em;
+}
+
+.product-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.add-btn {
+  border: none;
+  background-color: white;
+  color: #FF8349;
+  margin-left: 0.5em;
+}
+
+.shopping-btn {
+  border: none;
+  background-color: white;
+  color: #52B6E5;
+  margin-right: 0.5em;
+  border-radius: 3px;
+}
+
+.bundle-btn  {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #0AB88D;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+
+}
+
+
+
+
+
+.load-div {
+  margin: 35px auto;
+}
+
+
+.load-btn {
+  display: block;
+  border: none;
+  background-color: #52B6E5;
+  color: white;
+  font-size: 1.5em;
+  padding: 0.25em;
+  margin: 0 auto;
+  border-radius: 3px;
+
+}
+
+/***********************************************************
+ADD A SHOW PAGE STYLING
+***********************************************************/
+
+.build-promotion-container {
+  max-width: 55em;
+  margin: 2em auto;
+  padding: 0 5px;
+  position: relative;
+  -webkit-box-shadow: 0px 10px 5px 10px rgba(229,232,234,0.75);
+  -moz-box-shadow: 0px 10px 5px 10px rgba(229,232,234,0.75);
+  box-shadow: 0px 10px 5px 10px rgba(229,232,234,0.75);
+
+}
+
+.promotion-form-venue {
+  width: 100%;
+}
+
+.promotion-form-venue input {
+  padding: 5px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.5s;
+  width: 100%;
+  font-size: 0.75em;
+}
+
+.promotion-form-venue input:focus,
+.promotion-form-venue input.focus {
+  border-bottom: solid 2px #52bab3;
+}
+
+
+
+.build-promotion-textbox {
+  width: 100%;
+  height: 10em;
+  resize: none;
+  margin: 5px 0;
+  border-radius: 3px;
+  border: 2px solid #c9c9c9;
+}
+
+
+.build-promotion-table {
+  margin: 10px 0;
+  border-collapse: collapse;
+}
+
+.rows td{
+  /*border: 1px solid black;*/
+}
+
+.row-headers th {
+  text-align: left;
+}
+
+
+.settings-headers {
+  color: #111;
+  font-weight: 500;
+  font-size: 0.75em;
+  display:inline;
+}
+
+.settings-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #52b6e5;
+  color: white;
+  font-size: 0.75em;
+  padding: 10px 5px;
+  border-radius: 3px;
+}
+
+.submit-promotion-btn {
+  width: 100%;
+}
+
+.promotion-btn:hover,.submit-promotion-btn:hover {
+  background-color: #0074d9;
+}
+
+
+/***********************************************************
+END OF ADD A SHOW PAGE STYLING
+***********************************************************/
+
+/***********************************************************
+DETAILED PRODUCT INFO PAGE STYLING
+***********************************************************/
+
+.detailed-product-container {
+  max-width: 700px;
+  margin: 1.5em auto 3em ;
+  -webkit-box-shadow: 0px 10px 5px 10px rgba(229,232,234,0.75);
+  -moz-box-shadow: 0px 10px 5px 10px rgba(229,232,234,0.75);
+  box-shadow: 0px 10px 5px 10px rgba(229,232,234,0.75);
+}
+
+.detailed-product-img {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.product-commission-banner {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-color: white;
+  text-align: center;
+  font: italic 500 0.85em roboto;
+  color: #0AB88D;
+  width: 45%;
+  height: 15%;
+  padding-top: 5px;
+}
+
+.detailed-product-title-div {
+  padding: 0 10px;
+  border-bottom: 1px solid black;
+}
+
+.detailed-product-title {
+  display: block;
+  padding: 10px 0;
+  font-size: 1.75em;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+
+}
+
+.merchant-location-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-location {
+  color: #0074d9;
+}
+
+.product-headers {
+  display: block;
+  padding: 10px;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #0074d9;
+
+}
+
+.product-text {
+  color: #111;
+}
+
+
+.detailed-product-info {
+  position: relative;
+}
+
+.detailed-product-price {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #FF8349;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.detailed-add-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.detailed-product-copy {
+  padding: 10px;
+  color: #111;
+}
+
+
+.detailed-pdtc-date-price {
+  display: block;
+}
+
+
+
+.product-month-tab {
+  padding: 5px 10px;
+}
+
+.product-month-tab span {
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+  margin-right: 10px;
+  padding:  5px;
+  /*border: 1px solid grey;*/
+}
+
+.product-schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  /*padding: 0 10px;*/
+  /*border: 1px solid black;*/
+}
+
+.product-schedule-table tr {
+  /*border-bottom: 1px solid grey;*/
+  border-top: 1px solid grey;
+}
+
+.product-price {
+  display: block;
+}
+
+.product-schedule-table td {
+  padding: 10px;
+  font-weight: 500;
+  color: #52B6E5;
+}
+
+.check-availability-btn {
+  cursor: pointer;
+  border: 1px solid #52B6E5;
+  border-radius: 3px;
+  outline:none;
+  padding: 7px;
+  background-color: white;
+  color: #52B6E5;
+  font-size: 0.85em;
+  transition: 0.4s;
+}
+
+.check-availability-btn:hover {
+  background-color: #24A4E0;
+  color: white;
+}
+
+
+
+/***********************************************************
+END DETAILED PRODUCT INFO PAGE STYLING
+***********************************************************/
+
+
+/***********************************************************
+SHOPPING CART CSS
+***********************************************************/
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+
+}
+
+.cart-seller-title {
+  float: left;
+}
+
+.cart-price-quantity {
+ float: right;
+}
+
+.cart-product-img {
+  max-width: 100px;
+  /*margin: auto;*/
+}
+
+.cart-col-1 {
+  position: relative;
+}
+
+.cart-product-title {
+  font-size: 1.25em;
+  color: black;
+}
+
+.cart-product-title a:hover {
+  color: blue;
+}
+
+/***********************************************************
+CHECKOUT.HTML CSS
+***********************************************************/
+
+.checkout-container {
+  position: relative;
+  max-width: 650px;
+  margin: 2em auto;
+  padding: 0 10px;
+  position: relative;
+  -webkit-box-shadow: 0px 10px 5px 10px rgba(229,232,234,0.75);
+  -moz-box-shadow: 0px 10px 5px 10px rgba(229,232,234,0.75);
+  box-shadow: 0px 10px 5px 10px rgba(229,232,234,0.75);
+}
+
+.checkout-info {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.checkout-img {
+  width: 100%;
+  display:inline-block;
+}
+
+.checkout-show-info-container {
+  margin-left: 5px;
+}
+
+.checkout-show-title {
+  margin: 0.25em 0;
+  font-weight: 400;
+  font-size: 1em;
+}
+.checkout-show-location {
+  color: #06f;
+}
+.checkout-show-location,.checkout-show-time {
+  font-size: 0.85em;
+  display: inline-block;
+}
+
+.checkout-show-title,.checkout-show-time {
+  color: #111;
+}
+
+.checkout-header {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.checkout-selection {
+  display: block;
+}
+
+/*Table*/
+
+.checkout-selection table {
+  border-spacing: 0;
+}
+.checkout-offer{
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.checkout-offer th{
+  border-bottom: solid 2px #797e83;
+}
+
+.checkout-offer tr:hover {
+  background-color: rgba(229,232,234,0.75);
+}
+
+.checkout-table-row th,td{
+  padding-top: 10px;
+}
+
+.checkout-seating {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #FE6F5E;
+    text-align: center;
+}
+
+.checkout-seating{
+  text-align: center;
+  color: #FE6F5E;
+}
+
+
+
+.checkout-subtotal-line {
+  color: #000;
+  padding: 10px 0;
+  border-bottom: solid 2px #797e83;
+}
+
+.seating-chart {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.settings-btn:hover,.printConfirmation:hover,.checkout-btn:hover {
+  background-color: #24A4E0;
+}
+
+/***********************************************************
+CHECKOUT-2.HTML CSS
+***********************************************************/
+/*DELETE UNECESSARY*/
+.checkout-form-style {
+  width: 100%;
+}
+.checkout-form-style input {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.5s;
+  align-content: center;
+  width: 45%;
+  font-size: 1em;
+}
+
+.checkout-form-style input:focus,
+.checkout-form-style input.focus {
+  border-bottom: solid 2px #52bab3;
+}
+
+
+/***********************************************************
+CONFIRMATION.HTML CSS
+***********************************************************/
+
+.confirmation-message {
+  font-weight: 400;
+  color: #111;
+}
+
+.ticketSubtotal {
+	color: #111;
+  margin-top: 5px;
+}
+.success {
+	text-align: center;
+	margin-bottom:20px;
+	margin-top:10px;
+
+}
+
+.printConfirmation,.continueShop {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/***********************************************************
+TICKETS.HTML CSS
+***********************************************************/
+.ticket-container {
+  border-top: 2px solid rgba(229,232,234,0.75);
+  border-right:2px solid rgba(229,232,234,0.75);
+  border-bottom: 2px solid #0AB88D;
+  border-left: 2px solid rgba(229,232,234,0.75);
+  border-radius: 3px;
+  position: relative;
+  max-height: 180px;
+  margin-bottom: 2em;
+}
+
+.ticket-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ticket-img {
+  height: 180px;
+  padding-right: 5px;
+  border-right: 2px solid rgba(229,232,234,0.75);
+}
+
+.ticket-title {
+  color: #111;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 0 auto;
+
+}
+
+.ticket-text {
+  color: #111;
+  text-align: center;
+}
+
+.order-number,.ticket-number {
+  color: #111;
+  position: absolute;
+  right: 5px;
+}
+
+.ticket-number {
+  top: 5px;
+}
+
+.order-number {
+  bottom: 5px;
+}
+
+
+/*********************************
+416 PIXEL MIN SCREEN MEDIA QUERY
+*********************************/
+
+@media (min-width: 26em) {
+  input {
+    font-size: 1.25em;
+  }
+
+
+  .form-style input {
+    width: 80%;
+  }
+
+
+
+/*******************
+ACCOUNT-INFO STYLING
+*******************/
+  .account-container {
+    flex-flow: row wrap;
+    width: 75%;
+    margin: 25px auto;
+  }
+
+  .account-info {
+    margin-left: 1em;
+  }
+
+  .account-name-btn-div {
+    flex-direction: row;
+  }
+
+  .follow-link {
+    margin-left: 30px;
+
+  }
+
+  .img-div {
+    width: 180px;
+    height: 180px;
+
+  }
+
+  .account-name{
+    font-size: 1.25em;
+  }
+
+
+  .description-info {
+    font-size: 0.85em;
+    padding: 1em 0;
+    width: 100%;
+
+  }
+
+  .account-list {
+    flex-direction: row;
+  }
+
+  .new-account-btn {
+    padding: 10px;
+    font-size: 2em;
+  }
+
+  /*******************
+  END ACCOUNT-INF STYLING
+  *******************/
+
+  .product-listing {
+    flex-flow: row wrap;
+    justify-content: center;
+
+  }
+
+
+
+  .product-container {
+    margin-top: 0.5em;
+    margin-right: 1em;
+  }
+
+  /*******************
+  CHECKOUT- STYLING
+  *******************/
+.checkout-info {
+  flex-direction: row;
+}
+
+.checkout-img {
+  max-width: 200px;
+}
+
+}
+
+/*********************************
+END OF 416 PIXEL MIN SCREEN MEDIA QUERY
+*********************************/
+
+
+
+@media (min-width: 48em) {
+
+  .product-listing {
+    justify-content: center;
+  }
+
+
+  .search-container {
+    width: 80%;
+  }
+
+
+  .product-container {
+    /*justify-content: space-around;*/
+    max-width: 16em;
+  }
+
+
+  .product-listing {
+    flex-direction: row;
+    /*justify-content: space-around;*/
+
+  }
+
+
+    /*******************
+    CHECKOUT- STYLING
+    *******************/
+
+    .checkout-container {
+      padding: 10px 10px 5em 10px;
+    }
+
+    .checkout-info {
+      text-align: left;
+    }
+
+    .checkout-show-title {
+      font-size: 1.25em;
+    }
+
+    .checkout-show-location,.checkout-show-time {
+      font-size: 1em;
+    }
+
+    .checkout-show-info-container {
+      margin-left: 1em;
+    }
+
+    .checkout-seating{
+      font-size: 1em;
+    }
+
+
+    .ticketSubtotal {
+      font-size: 1.25em;
+    }
+
+    .checkout-btn {
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+      width: 30%;
+    }
+
+    .printConfirmation,.continueShop {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .printConfirmation {
+      right: 10px;
+    	width:30%;
+    }
+
+    .continueShop {
+      left: 10px;
+      width: 30%;
+    }
+
+  /***********************************************************
+  ADD A SHOW PAGE STYLING
+  ***********************************************************/
+
+  .build-promotion-container {
+    padding: 0 10px 5em 10px;
+  }
+
+  .promotion-form-venue input {
+    padding: 10px;
+    width: 45%;
+    font-size: 1em;
+  }
+
+  .promotion-details-form input {
+    padding: 5px 0;
+    width: 95%;
+  }
+
+  .settings-headers {
+    font-size: 1em;
+  }
+
+  .settings-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .submit-promotion-btn {
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    right: 0;
+  }
+
+  /***********************************************************
+  DETAILED PRODUCT INFO PAGE STYLING
+  ***********************************************************/
+    .product-commission-banner {
+      font-size: 1.5em;
+    }
+
+    .merchant-location-div {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .checkout-header {
+      font-size: 1.5em;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 64em) {
+  .product-listing {
+    margin: auto;
+    max-width: 90%;
+  }
+
+  .modal-content {
+    max-width: 650px;
+  }
+}

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Complete CoFarer Account Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/application.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+  <body>
+
+<!--NAVIGATION AND LOGO -->
+
+    <div class="#">
+      <header id="header">
+        <a class="site-logo" href="home.html">
+          <b class="srt">CoFareCash Logo</b>
+        </a>
+        <a href="#" class="toggle">
+          <i class="material-icons md-36">menu</i>
+        </a>
+        <div class="menu">
+          <ul class="nav">
+            <li class="nav__item--current"><a href="account.html">Account</a></li>
+            <li class="nav__item"><a href="#">Dashboard</a></li>
+            <li class="nav__item"><a href="Orders.html">Orders</a></li>
+            <li class="nav__item"><a href="help.html">Help</a></li>
+            <li class="nav__item"><a href="#">Log Out</a></li>
+          </ul>
+
+        </div>
+
+
+      </header>
+    </div>
+<!--NAVIGATION AND LOGO -->
+
+
+
+    <div class="container">
+
+<!-- START SEARCH CONTAINER DIV   -->
+
+      <div class="search--container">
+        <form class="" action="index.html" method="post">
+          <label class="form__label--hidden" for="searchProductName">Search</label>
+          <input class="form__input--search" type="search" name="name" value="" placeholder="Search">
+
+          <label class="form__label--hidden" for="searchLocation">Location</label>
+          <input class="form__input--search" type="search" name="name" value="" placeholder="Location">
+
+          <input type="button" name="name" class="material-icons btn__search--submit" value="search">
+        </form>
+
+      </div>
+<!-- END SEARCH CONTAINER DIV   -->
+
+<!--PROFILE PICTURE, NAME, DESCRIPTION, FOLLOW BUTTON, WEBSITE, FOLLOWERS AND FOLLOWING   -->
+
+      <div class="account--container">
+
+        <div class="account__img--container">
+
+          <button type="button" name="button" class="account-btn">
+            <img src="img/eei-img.jpg" alt="" class="account-img"/>
+          </button>
+
+        </div>
+
+        <div class="account__info--container">
+          <div class="account__nameBtn--container">
+            <h4 class="account--name">Entertainment Events, Inc</h4>
+            <a href="#" class="#">
+              <button type="button" name="button" class="btn--follow">
+                  <i class="material-icons">add</i>
+                  Follow
+              </button>
+            </a>
+
+
+          </div>
+
+          <p class="account--description">
+            (DESCRIPTION 190 character max)
+            EEI has made its mark on the theatrical touring industry by offering a variety of exciting plays and musicals to an ever growing list of professional presenting organizations throughout the country.
+          </p>
+
+            <ul class="account__infoList--container">
+              <li class="account--list">
+                <a href="https://www.entertainmentevents.com">www.entertainmentevents.com</a>
+              </li>
+
+              <li class="account--list">
+                <span>Followers</span> <span>50</span>
+              </li>
+
+              <li class="account--list">
+                <span>Following</span> <span>17</span>
+              </li>
+
+            </ul>
+
+        </div>
+
+      </div>
+
+
+<!--BEGIN PRODUCT GROUP LISTING DIV  -->
+    <div class="product-listing-grid">
+
+
+
+
+<!--PRODUCT CONTAINER 1-->
+      <div class="productCard--container">
+        <a href="product.html">
+          <img src="img/girlsnight-final-img.jpg" alt="" class="productCard-img"/>
+        </a>
+
+
+<!-- Trigger/Open REMOVE MODAL -->
+            <button type="button" name="button" class="btn--remove" id=removeBtn>
+                <i class="material-icons md-36">cancel</i>
+            </button>
+
+<!-- The Modal -->
+              <div class="remove-btn-modal" id="removeModal">
+<!-- Modal content -->
+                <div class="removeModal-content">
+                  <span class="removeClose">x</span>
+                  <i class="material-icons md-36">cancel</i>
+                  <h2 class="removeModal-product-title">Removed</h2>
+                  <h2 class="removeModal-product-title">
+                    Girls Night: The Musical</h2>
+                    <p>
+                      was removed from your profile!
+                    </p>
+                </div>
+
+              </div>
+<!-- END MODAL content -->
+
+
+
+
+        <div class="productCard-info--container">
+          <h3 class="productCard-name">Girls Night: The Musical</h3>
+          <h4 class="productCard-show--location">
+            <i class="material-icons">location_on</i>
+            New York, New York
+          </h4>
+          <h4 class="productCard-show--date">September 10 - October 10</h4>
+          <h4 class="productCard-price">$50.00 - $75.00</h4>
+
+        </div>
+        <div class="productCard-btn--container">
+
+          <button type="button" name="button" class="btn--addShow" id="addBtn">
+            <i class="material-icons md-36">add_circle</i>
+          </button>
+
+          <a href="#" class="btn--share share">
+            <i class="material-icons md-36">launch</i>
+          </a>
+
+
+          <a href="#" class="btn--commission">
+            <i class="material-icons md-36">monetization_on</i>
+          </a>
+
+
+
+
+
+        </div>
+
+        <!-- commission container-->
+
+      <div class="commission--container">
+        <span class="product--banner">10% Commission</span>
+        <span class="product--banner">($5.00-$7.50)</span>
+
+      </div>
+
+      <!-- end commission container-->
+
+      <!--shareButton--container-->
+
+      <div class="shareIcon--container">
+
+        <div class="icon-share">
+
+          <div class="icon__facebook--container">
+            <a href="#" class="icon-facebook">
+              <b class="srt">facebook</b>
+
+            </a>
+
+          </div>
+
+          <div class="icon__twitter--container">
+            <a href="#" class="icon-twitter">
+              <b class="srt">Twitter</b>
+
+            </a>
+
+          </div>
+
+          <div class="icon__instagram--container">
+            <a href="#" class="icon-instagram">
+              <b class="srt">instagram</b>
+
+            </a>
+          </div>
+
+          <div class="icon__pinterest--container">
+            <a href="#" class="icon-pinterest">
+              <b class="srt">Pinterest</b>
+
+            </a>
+          </div>
+
+          <div class="icon__email--container">
+            <a href="#" class="icon-email">
+              <b class="srt">email</b>
+            </a>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <!--shareButton--container-->
+
+      </div>
+<!--END PRODUCT CONTAINER 1  -->
+
+<!--PRODUCT CONTAINER 2  -->
+    <div class="productCard--container">
+        <img class="productCard-img" src="img/les-miserable.jpg" alt="" class="productCard-img" />
+
+<!-- Trigger/Open REMOVE MODAL -->
+          <button type="button" name="button" class="btn--remove" id=removeBtn>
+              <i class="material-icons md-36">cancel</i>
+          </button>
+
+        <div class="productCard-info--container">
+          <h3 class="productCard-name">Les Miserable</h3>
+          <h4 class="productCard-show--location">
+            <i class="material-icons">location_on</i>
+            New York, New York
+          </h4>
+          <h4 class="productCard-show--date">September 12 - September 15</h4>
+          <h4 class="productCard-price">$35.00 - $65.00</h4>
+        </div>
+
+        <div class="productCard-btn--container">
+            <button  type="button" name="button" class="btn--addShow">
+              <i class="material-icons md-36">
+                add_circle
+              </i>
+            </button>
+
+            <a href="#"  class="btn--share share">
+              <i class="material-icons md-36">
+                launch
+              </i>
+            </a>
+
+            <a href="#" class="btn--commission">
+              <i class="material-icons md-36">
+                monetization_on
+              </i>
+            </a>
+        </div>
+    </div>
+<!--END PRODUCT CONTAINER 2  -->
+
+<!--PRODUCT CONTAINER 3  -->
+    <div class="productCard--container">
+      <img class="productCard-img" src="img/aladdin-banner.jpg" alt="" />
+<!-- Trigger/Open REMOVE MODAL -->
+        <button type="button" name="button" class="btn--remove" id=removeBtn>
+            <i class="material-icons md-36">cancel</i>
+        </button>
+
+      <div class="productCard-info--container">
+        <h3 class="productCard-name">Aladdin</h3>
+        <h4 class="productCard-show--location">
+          <i class="material-icons">location_on</i>
+          New York, New York
+        </h4>
+        <h4 class="productCard-show--date">September 17, 2016</h4>
+        <h4 class="productCard-price">$50.00</h4>
+      </div>
+
+      <!--START PRODUCTCARD BTN CONTAINER  -->
+
+      <div class="productCard-btn--container">
+          <button  type="button" name="button" class="btn--addShow">
+            <i class="material-icons md-36">
+              add_circle
+            </i>
+          </button>
+
+          <a href="#"  class="btn--share share">
+            <i class="material-icons md-36">
+              launch
+            </i>
+          </a>
+
+          <a href="#" class="btn--commission">
+            <i class="material-icons md-36">
+              monetization_on
+            </i>
+          </a>
+
+      </div>
+      <!--END PRODUCTCARD BTN CONTAINER  -->
+    </div>
+<!--END PRODUCT CONTAINER 3  -->
+
+<!--PRODUCT CONTAINER 4  -->
+    <div class="productCard--container">
+      <img class="productCard-img" src="img/cirque-du-soleil.jpg" alt="" />
+<!-- Trigger/Open REMOVE MODAL -->
+        <button type="button" name="button" class="btn--remove" id=removeBtn>
+            <i class="material-icons md-36">cancel</i>
+        </button>
+
+      <div class="productCard-info--container">
+        <h3 class="productCard-name">Cirque du Soleil PARAMOUR</h3>
+        <h4 class="productCard-show--location">
+          <i class="material-icons">location_on</i>
+          New York, New York
+        </h4>
+        <h4 class="productCard-show--date">September 17, 2016</h4>
+        <h4 class="productCard-price">$55.00</h4>
+      </div>
+
+      <!--START PRODUCTCARD BTN CONTAINER  -->
+
+      <div class="productCard-btn--container">
+          <button  type="button" name="button" class="btn--addShow">
+            <i class="material-icons md-36">
+              add_circle
+            </i>
+          </button>
+
+          <a href="#"  class="btn--share share">
+            <i class="material-icons md-36">
+              launch
+            </i>
+          </a>
+
+          <a href="#" class="btn--commission">
+            <i class="material-icons md-36">
+              monetization_on
+            </i>
+          </a>
+
+      </div>
+      <!--END PRODUCTCARD BTN CONTAINER  -->
+
+    </div>
+<!--PRODUCT CONTAINER 4  -->
+
+<!--PRODUCT CONTAINER 5  -->
+    <div class="productCard--container">
+      <img class="productCard-img" src="img/wicked.jpg" alt="" />
+<!-- Trigger/Open REMOVE MODAL -->
+          <button type="button" name="button" class="btn--remove" id=removeBtn>
+              <i class="material-icons md-36">cancel</i>
+          </button>
+
+      <div class="productCard-info--container">
+        <h3 class="productCard-name">Wicked</h3>
+        <h4 class="productCard-show--location">
+          <i class="material-icons">location_on</i>
+          New York, New York
+        </h4>
+        <h4 class="productCard-show--date">October 1, 2016</h4>
+        <h4 class="productCard-price">$85.00</h4>
+      </div>
+
+      <!--START PRODUCTCARD BTN CONTAINER  -->
+
+      <div class="productCard-btn--container">
+          <button  type="button" name="button" class="btn--addShow">
+            <i class="material-icons md-36">
+              add_circle
+            </i>
+          </button>
+
+          <a href="#"  class="btn--share share">
+            <i class="material-icons md-36">
+              launch
+            </i>
+          </a>
+
+          <a href="#" class="btn--commission">
+            <i class="material-icons md-36">
+              monetization_on
+            </i>
+          </a>
+
+      </div>
+      <!--END PRODUCTCARD BTN CONTAINER  -->
+
+    </div>
+<!-- END PRODUCT CONTAINER 5  -->
+
+<!--PRODUCT CONTAINER 6  -->
+    <div class="productCard--container">
+      <img class="productCard-img" src="img/kinkyboots.jpg" alt="" />
+<!-- Trigger/Open REMOVE MODAL -->
+        <button type="button" name="button" class="btn--remove" id=removeBtn>
+            <i class="material-icons md-36">cancel</i>
+        </button>
+
+      <div class="productCard-info--container">
+        <h3 class="productCard-name">  Kinky Boots</h3>
+        <h4 class="productCard-show--location">
+          <i class="material-icons">location_on</i>
+          New York, New York
+        </h4>
+        <h4 class="productCard-show--date">October 18, 2016</h4>
+        <h4 class="productCard-price">  $48.00</h4>
+      </div>
+
+      <!--START PRODUCTCARD BTN CONTAINER  -->
+
+      <div class="productCard-btn--container">
+          <button  type="button" name="button" class="btn--addShow">
+            <i class="material-icons md-36">
+              add_circle
+            </i>
+          </button>
+
+          <a href="#"  class="btn--share share">
+            <i class="material-icons md-36">
+              launch
+            </i>
+          </a>
+
+          <a href="#" class="btn--commission">
+            <i class="material-icons md-36">
+              monetization_on
+            </i>
+          </a>
+
+      </div>
+      <!--END PRODUCTCARD BTN CONTAINER  -->
+
+    </div>
+<!--END PRODUCT CONTAINER 6  -->
+
+<!--PRODUCT CONTAINER 7  -->
+    <div class="productCard--container">
+      <img class="productCard-img" src="img/bookofmormon.jpg" alt="" />
+<!-- Trigger/Open REMOVE MODAL -->
+        <button type="button" name="button" class="btn--remove" id=removeBtn>
+            <i class="material-icons md-36">cancel</i>
+        </button>
+
+      <div class="productCard-info--container">
+        <h3 class="productCard-name">The Book of Mormon</h3>
+        <h4 class="productCard-show--location">
+          <i class="material-icons">location_on</i>
+          New York, New York
+        </h4>
+        <h4 class="productCard-show--date">November 3, 2016</h4>
+        <h4 class="productCard-price">$65.00</h4>
+      </div>
+
+      <!--START PRODUCTCARD BTN CONTAINER  -->
+
+      <div class="productCard-btn--container">
+          <button  type="button" name="button" class="btn--addShow">
+            <i class="material-icons md-36">
+              add_circle
+            </i>
+          </button>
+
+          <a href="#"  class="btn--share share">
+            <i class="material-icons md-36">
+              launch
+            </i>
+          </a>
+
+          <a href="#" class="btn--commission">
+            <i class="material-icons md-36">
+              monetization_on
+            </i>
+          </a>
+
+      </div>
+      <!--END PRODUCTCARD BTN CONTAINER  -->
+    </div>
+<!--END PRODUCT CONTAINER 7  -->
+
+<!--PRODUCT CONTAINER 8  -->
+    <div class="productCard--container">
+      <img class="productCard-img" src="img/fiddler-on-the-roof.jpg" alt="" />
+<!-- Trigger/Open REMOVE MODAL -->
+        <button type="button" name="button" class="btn--remove" id=removeBtn>
+            <i class="material-icons md-36">cancel</i>
+        </button>
+
+      <div class="productCard-info--container">
+        <h3 class="productCard-name">Fiddler On The Roof</h3>
+        <h4 class="productCard-show--location">
+          <i class="material-icons">location_on</i>
+          New York, New York
+        </h4>
+        <h4 class="productCard-show--date">December 1,2016</h4>
+        <h4 class="productCard-price">$50.00</h4>
+      </div>
+      <!--START PRODUCTCARD BTN CONTAINER  -->
+
+      <div class="productCard-btn--container">
+          <button  type="button" name="button" class="btn--addShow">
+            <i class="material-icons md-36">
+              add_circle
+            </i>
+          </button>
+
+          <a href="#"  class="btn--share share">
+            <i class="material-icons md-36">
+              launch
+            </i>
+          </a>
+
+          <a href="#" class="btn--commission">
+            <i class="material-icons md-36">
+              monetization_on
+            </i>
+          </a>
+
+      </div>
+      <!--END PRODUCTCARD BTN CONTAINER  -->
+
+    </div>
+
+
+<!--END PRODUCT CONTAINER 8  -->
+
+
+  </div>
+<!--END PRODUCT LISTING 1  -->
+
+
+<!--LOAD DIV -->
+    <div class="load-btn--container">
+      <button type="button" name="button" class="load-btn">Load More</button>
+    </div>
+<!--END LOAD DIV-->
+
+
+
+
+
+    </div>
+    <!--END CONTAINER DIV  -->
+
+    <footer id="footer">
+      <ul class="nav">
+        <li class="nav__item"><a href="home.html">Home</a></li>
+        <li class="nav__item"><a href="aboutUs.html">About Us</a></li>
+        <li class="nav__item"><a href="privacy.html">Privacy</a></li>
+        <li class="nav__item"><a href="resoruces.html">Resources</a></li>
+        <li class="nav__item"><a href="terms.html">Terms of Use</a></li>
+        <li class="nav__item"><a href="mission.html">Mission</a></li>
+      </ul>
+
+    </footer>
+
+    <script src="myScript.js" type="text/javascript"></script>
+    <script type="text/javascript" src="jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="share.js"></script>
+
+
+  </body>
+</html>

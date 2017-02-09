@@ -1,0 +1,107 @@
+
+body {
+  font-family: "Cambria", sans-serif;
+  font-weight: 400;
+}
+
+#header, button, .site-logo, .toggle, .title, a, ul {
+  display: none;
+}
+
+
+
+/****************************
+confirmation.html Print Styling
+***********************************/
+
+.confirmation-message {
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.checkout--container {
+  position: relative;
+  max-width: 650px;
+  margin: 2em auto;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.checkout__product--container {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  text-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.checkout__info-container {
+  margin: 0 auto;
+}
+
+
+.checkout--img {
+  width: 200px;
+}
+
+.table {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.table__header, .table__header--price {
+  text-align: left;
+  border-bottom: solid 2px black;
+}
+/***************************
+TICKET PRINT STYLING
+***************************/
+
+.product--copy {
+  font-size: 14px;
+}
+
+.ticket--container {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-radius: 3px;
+  position: relative;
+  margin: 0 auto 28px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 550px;
+}
+
+.ticket--img {
+  height: 180px;
+  border-right: 2px solid rgba(229,232,234,0.75);
+
+}
+
+.ticket__content--container {
+  margin: auto 0 auto 20px;
+}
+
+.ticket-number,.order-number {
+  position: absolute;
+  right: 10px;
+}
+
+.ticket-number {
+  top: 10px;
+}
+
+.order-number {
+  bottom: 10px;
+}

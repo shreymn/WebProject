@@ -1,0 +1,376 @@
+body {
+  color: #797e83;
+  width: 100%;
+  min-width: 300px;
+  margin: auto;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header-container {
+  margin: 0 auto;
+}
+
+/****************************
+  CONTAINER FOR IMG & SING-UP & MERCHANT-BTN
+****************************/
+.container {
+  /*width: 95%;*/
+  margin: auto;
+  min-height: 50em;
+}
+
+/****************************
+PARAGRAPH STYLING
+****************************/
+
+
+p {
+  line-height: 1.5em;
+}
+
+/****************************
+IMG STYLING
+****************************/
+
+img {
+  width: 100%;
+  margin: auto;
+}
+
+.img-container {
+
+  background-color: #000;
+}
+
+.img-container img {
+  opacity: .6;
+}
+
+/****************************
+Title Styling
+****************************/
+
+.title {
+  text-align: center;
+  color: #FE6F5E;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+/****************************
+STYLING FOR PARAGRAPH DESCRIPTION
+****************************/
+.slogan {
+  position: absolute;
+  top: .25em;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0 10px 30px;
+  color: #fff;
+  font-size: 1.25em;
+}
+
+.description {
+  text-align: center;
+  padding: 0 10px 30px;
+  color: #333333;
+}
+
+/****************************
+A , UL & LI STYLING
+****************************/
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/****************************
+SIGN UP BUTTON STYLE
+****************************/
+
+.btn-container {
+  position: relative;
+}
+
+.sign-up {
+  position: absolute;
+  width: 35%;
+  height: 10%;
+  top: 55%;
+  left: -0.5%;
+  bottom: 30%;
+  right: 0.5%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+}
+
+.button {
+  background-color: #FE6F5E;
+  border: none;
+  padding: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: .8s;
+  margin: 0 auto;
+
+}
+
+.button a {
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #0AB88D;
+}
+
+/****************************
+COFARER-BTN STYLE
+****************************/
+
+.cofarer-btn {
+  position: absolute;
+  width: 70%;
+  height: 8%;
+  top: 0.5%;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto;
+  font-size: 1.25em;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+  background-color: #FE6F5E;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: .8s;
+}
+
+
+
+.cofarer-btn a {
+  color: #fff;
+}
+
+.cofarer-btn:hover {
+  background-color: #fff;
+}
+
+.cofarer-btn a:hover {
+  color: #0AB88D;
+}
+
+/****************************
+MERCHANT BUTTON STYLE
+****************************/
+
+.merchant-btn {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 1em;
+  width: 40%;
+  height: 10%;
+  font-size: 1em;
+  border-radius: 3px;
+}
+
+.merchant-btn a {
+  color: #20B1C8;
+}
+
+.merchant-btn:hover {
+  background-color:  #FE6F5E;
+}
+
+.merchant-btn a:hover {
+  color: white;
+}
+
+/****************************
+SVG STYLING
+****************************/
+.banner-svg {
+  background-position: center center;
+    background-position-x: 50%;
+    background-position-y: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 450px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.svg {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+/****************************
+PRODUCT LIST STYLING (MOBILE FIRST)
+****************************/
+
+.product-list {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -mox-box-flex-direction: column;
+  flex-direction: column;
+}
+
+.product-list li {
+  display: block;
+  color: #4C4C4C;
+  font-size: 1.125em;
+  font-weight: 300;
+  text-align: center;
+  padding: .4em;
+  border-bottom: 1px solid #ebecec;
+}
+
+/****************************
+FOOTER STYLING
+****************************/
+
+footer {
+  background-color: #52bab3;
+}
+footer {
+  height: 300px;
+}
+
+footer a {
+  color: white;
+
+}
+
+
+/****************************
+MEDIA QUERIES 769px
+****************************/
+
+
+@media (min-width: 769px) {
+
+  .header-container {
+    width: 95%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .title {
+    top: 30%;
+    font-size: 2.5em;
+  }
+
+  .banner-svg {
+    min-height: 640px;
+  }
+
+  .slogan {
+    font-size: 1.75em;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 1.3em;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .product-list {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+
+  }
+
+  .product-list li {
+    width: 250px;
+  }
+
+  .sign-up {
+    max-width: 190px;
+    max-height: 50px;
+    font-size: 1.5em;
+
+  }
+
+  .merchant-btn {
+    font-size: 1.5em;
+  }
+
+  .cofarer-btn {
+    width: 30%;
+    font-size: 1.5em;
+  }
+
+  .icon-container {
+    width: 50%;
+  }
+
+  footer {
+    height: 200px;
+    padding-top: 5em;
+    text-align: center;
+
+  }
+
+  footer .product-list {
+    width: 75%;
+    margin: auto;
+
+  }
+
+  footer .product-list li {
+    border-bottom: none;
+
+
+  }
+
+
+}
+/*END OF MEDIA QUERY*/
+
+/****************************
+MEDIA QUERIES 1024px
+****************************/
+
+
+@media (min-width: 1024px) {
+
+  .container {
+    width: 85%;
+  }
+
+  .slogan {
+    font-size: 2.5em;
+  }
+
+
+
+}
